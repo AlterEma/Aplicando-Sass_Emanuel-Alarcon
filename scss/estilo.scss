@@ -1,0 +1,222 @@
+@import './variables';
+@import './Selectionmaindirec.scss';
+@import './header.scss';
+    
+
+
+*{
+
+    padding: 0%;
+    margin: 0%;
+
+}
+
+@font-face {
+    font-family: AnimeJAV;
+    src: url("Tipografia/PermanentMarker-Regular.ttf");
+}
+
+@keyframes botones{
+
+    1%{
+        border-top: 5px solid #3a3a3a;
+    }
+    2%{
+        border-top: 5px solid #c7c7c7;
+    }
+
+    24%{
+        border-right: 5px solid #1f1f1f;
+    }
+    25%{
+        border-right: 5px solid #c7c7c7;
+    }
+
+    48%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    49%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    50%{
+        border-bottom: 5px solid #c7c7c7;
+    }
+
+    75%{
+        border-left: 5px solid #1f1f1f;
+    }
+    99%{
+        border-left: 5px solid #c7c7c7;
+    }
+    100%{
+        border-left: 5px solid #1f1f1f;
+    }
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+ul, li{
+
+    list-style: none;
+
+}
+
+/* HEADER */
+header{
+
+    display: grid;
+    height: auto;
+    padding-bottom: 8px;
+    width: 100%;
+    background-color: $backgroundheader;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 5vw;
+    grid-template-areas: "logo logo"
+                         "nav nav";              
+   
+}
+
+nav{
+
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   grid-area: nav;
+
+}
+
+.ilmenu{
+
+   font-size: $botones;
+   text-decoration: none;
+   padding: 0.5vw;
+   color: $colordos;
+   border: 5px solid transparent;
+
+}
+
+.ilmenu:hover{
+
+   animation-name: botones;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   background: $botonesHeader;
+
+}
+
+.limenuinput input{
+
+   border-radius: 20px;
+   height: 2rem;
+   width: 15vw;
+
+}
+
+.divlogo{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-area: logo;
+
+}
+
+.divlogo:hover{
+
+   animation: pulse;
+   animation-duration: 2s; 
+
+}
+
+.divlogo h1 a{
+
+   font-family: AnimeJAV;
+   color: $coloruno;
+   font-size: $tituloheader;
+
+}
+
+.divlogo img{
+
+   height: 9vw;
+   margin-left: 19px;
+
+}
+/* HEADER */
+
+/* MAIN */
+.selectionmaindirec{
+
+    background-color: $colordos;
+    padding-bottom: 3vw;
+
+}
+
+.h3divdirec{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h3direc{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $tituloprincipal;
+    width: 95vw;
+    margin: 20px;
+    color: $coloruno;
+    background-color: $fondotituloprincipal;
+
+}
+
+.ulselectionmaindirec{
+
+    display: grid;
+    height: auto;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
+    grid-template-rows: 23vw 23vw 23vw 23vw;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.liselectionmaindirec{
+
+    padding: $padinganimes;
+    height: 19vw;
+    background-color: $coloruno;
+
+}
+
+.liselectionmaindirec figure:hover{
+
+    animation: pulse;
+    animation-duration: 2s;
+
+}
+
+.liselectionmaindirec img{
+
+    width: 100%;
+    height: 15vw;
+
+}
+
+.liselectionmaindirec figcaption{
+
+    font-size: $titulosdeanimes;
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+
+}
+/* MAIN */
