@@ -54,6 +54,538 @@
 
 }
 
+/* Mini juego */
+/* Mixin */
+    @mixin violetaRojo ($paddingtop , $rotate , $top , $left , $zindex){
+        width: 0;
+        height: 0;
+        padding-top: $paddingtop;
+        border-top: 150px solid blueviolet;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        transform: $rotate;
+        position: relative;
+        top: $top;
+        left: $left;
+        z-index: $zindex;
+        grid-area: a1;
+    }
+/* Mixin */
+
+@keyframes violeta{
+
+    0%{ 
+
+        width: 0;
+        height: 0;
+        border-top: 150px solid blueviolet;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: 46px;
+        left: 46px;
+        z-index: 2;
+        grid-area: a1;
+
+      }
+
+    100%{ 
+
+        @include violetaRojo( 150px , rotate(-45deg) , -7px , -7px , 3 );
+        
+     }
+
+}
+
+@keyframes rojo{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 150px solid red;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        position: relative;
+        transform: rotate(0deg);
+        top: 25px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-top: 150px;
+        border-top: 150px solid red;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        position: relative;
+        transform: rotate(0deg);
+        bottom: 300px;
+        top: -50px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes naranja{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-right: 150px solid orange;
+        border-bottom: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: 46px;
+        right: 46px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-right: 150px;
+        border-top: 62px solid transparent;
+        border-right: 150px solid orange;
+        border-bottom: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: -7px;
+        right: -7px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes amarillo{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-right: 150px solid yellow;
+        transform: rotate(0deg);
+        position: relative;
+        right: 25px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-left: 150px;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-right: 150px solid yellow;
+        transform: rotate(0deg);
+        position: relative;
+        right: -49px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes verde{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid green ;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        bottom: 46px;
+        right: 46px;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid green ;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        bottom: -5px;
+        right: -5px;
+        position: relative;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes celeste{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid rgb(135, 206, 235);
+        border-left: 62px solid transparent;
+        position: relative;
+        bottom: 25px;
+        z-index: 2; 
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid rgb(135, 206, 235);
+        border-left: 62px solid transparent;
+        position: relative;
+        bottom: -50px;
+        z-index: 3;
+    
+    }
+
+}
+
+@keyframes negro{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid black;
+        border-left: 62px solid transparent;
+        transform: rotate(45deg);
+        position: relative;
+        left: 46px;
+        bottom: 46px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid black;
+        border-left: 62px solid transparent;
+        transform: rotate(45deg);
+        position: relative;
+        left: -5px;
+        bottom: -5px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes azul{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-left: 150px solid blue;
+        position: relative;
+        left: 25px;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-left: 150px;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-left: 150px solid blue;
+        position: relative;
+        left: -49px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes animacion{
+
+    0%{
+
+        position: absolute;
+        left: -105px;
+        top: 500px;
+        z-index: 1;
+        height: auto;
+        width: auto;
+        background-color: aqua;
+
+    }
+
+}
+
+.contenedoranimacion{
+
+    position: absolute;
+    left: -170px;
+    top: 450px;
+    z-index: 10;
+
+}
+
+.contenedoranimacion:hover{
+
+    position: absolute;
+    top: 400px;
+    height: auto;
+    width: auto;
+    z-index: 10;
+
+}
+
+.minijuego{
+
+    position: fixed;
+    height: 300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: "a1 a2 a3"
+                         "b1 b2 b3"
+                         "c1 c2 c3";
+
+    align-items: center;   
+    justify-items: center;    
+    transform: scale(0.3);
+
+}
+
+.minijuego:hover{
+
+    transform: scale(1.5);
+    padding-left: 35vw;
+    padding-bottom: 400px;
+    top: 290px;
+
+}
+
+.imagenanimacion{
+
+    position: absolute;
+    grid-area: b2;
+    z-index: 0;
+
+}
+
+.unoanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid blueviolet;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    top: 46px;
+    left: 46px;
+
+}
+
+.unoanimacion:hover {
+
+    animation-name: violeta;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+}
+
+.dosanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    position: relative;
+    top: 25px;
+
+}
+
+.dosanimacion:hover {
+
+    animation-name: rojo;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+}
+
+.tresanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-right: 150px solid orange;
+    border-bottom: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    top: 46px;
+    right: 46px;
+
+}
+
+.tresanimacion:hover{
+
+    animation-name: naranja;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.cuatroanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-left: 150px solid blue;
+    position: relative;
+    left: 25px;
+
+}
+
+.cuatroanimacion:hover{
+
+    animation-name: azul;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.cincoanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    border-top: 46px;
+    right: 46px;
+
+}
+
+.seisanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-right: 150px solid yellow;
+    position: relative;
+    right: 25px;
+
+}
+
+.seisanimacion:hover{
+
+    animation-name: amarillo;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+ 
+}
+
+.sieteanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid black;
+    border-left: 62px solid transparent;
+    transform: rotate(45deg);
+    position: relative;
+    left: 46px;
+    bottom: 46px;
+
+}
+
+.sieteanimacion:hover{
+
+    animation-name: negro;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.ochoanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid rgb(135, 206, 235);
+    border-left: 62px solid transparent;
+    position: relative;
+    bottom: 25px;
+
+
+}
+
+.ochoanimacion:hover{
+
+    animation-name: celeste;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.nueveanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid green ;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    bottom: 46px;
+    right: 46px;
+    position: relative;
+
+}
+
+.nueveanimacion:hover{
+
+    animation-name: verde;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+/* Mini juego */
+
+/* Universal */
 a{
 
     text-decoration: none;
@@ -66,12 +598,598 @@ ul, li{
 
 }
 
+
+/* Universal */
+
+/* Movil */
+@media only screen and ( max-width: 600px){
+
+/* Extend */
+.centratebienmovil{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centratebientextomovil{
+
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;  
+
+}
+/* Extend */
+/* Mixin */
+@mixin titulosmixin ($margin , $witdh , $colorfondo){
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin;
+    width: $witdh;
+    color: white;
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+    background-color: $colorfondo;
+    font-size: 5vw;
+    
+    
+}
+/* Mixin */
+
+/* Header */
+header{
+
+    height: auto;
+    background-color: black;
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a4;
+    height: auto;
+
+}
+
+.ulnav{
+
+    display: grid;
+    padding: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.ilmenu{
+
+    font-size: 6vw;
+    margin: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    text-decoration: none;
+    
+}
+
+.ilmenu:hover{
+
+    color: white;
+    border-left: 5px solid #c7c7c7;
+    border-right: 5px solid #c7c7c7;
+    background: #1f1f1f;
+
+}
+
+.limenuinput input{
+
+    height: 5vw;
+    width: 45vw;
+    border-radius: 20px;
+
+}
+
+
+.divlogo{
+
+    grid-area: a1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.divlogo h1 a{
+
+    font-family: AnimeJAV;
+    color: rgb(255, 255, 255);
+    font-size: 13vw;
+
+}
+
+.divlogo img{
+
+    margin-left: 10px;
+    height: 20vw;
+    width: 20vw;
+
+}
+/* Header */
+
+/* main */
+/* Index */
+.indexsection{
+
+    @extend .centratebienmovil;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey;
+
+}
+
+.h3mainindex h3{
+
+    @include titulosmixin(0% , 100% , rgb(146, 20, 16) );
+
+}
+
+.slide{
+
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 45px;
+
+    & img{
+        height: 52vw;
+    }
+
+}
+
+h5{
+        
+    color: black;
+
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        font-size: 2rem;
+    }
+
+}
+
+.generosindex{
+
+    color: black;
+
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        font-size: 1.5rem;    
+    }
+
+}
+/* Index */
+
+/* Directorio Anime */
+.selectionmaindirec{
+
+    background-color: $colordos;
+    padding-bottom: 3vw;
+
+}
+
+.h3divdirec{
+
+    @extend .centratebienmovil;
+    
+    & .h3direc{
+
+        @include titulosmixin(20px 0px 10px 0px , 95vw , $tirulodirectorio);
+
+    }
+
+}
+
+.ulselectionmaindirec{
+
+    padding: 0%;
+    display: grid;
+    height: auto;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
+    grid-template-rows: 23vw 23vw 23vw 23vw;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    & .liselectionmaindirec{
+        padding: $padinganimes;
+        height: 19vw;
+        background-color: $coloruno;
+
+        
+        
+        & figure:hover{  
+            animation: pulse;
+            animation-duration: 2s;
+        }
+
+        & img{
+
+            width: 100%;
+            height: 15vw;
+        
+        }
+
+        & figcaption{
+            font-size: $titulosdeanimes;
+            @extend .centratebientextomovil;
+        }
+
+    }
+
+}
+/* Directorio Anime */
+
+/* En emision */
+.selectionemision{
+
+    padding-bottom: 3vw;
+
+}
+
+.h3divemision{
+
+    @extend .centratebienmovil;
+
+}
+
+.h3emision{
+
+    @include titulosmixin(20px , 80vw , $tiruloenmision);
+
+}
+
+.divemision{
+
+    display: grid;
+    background-color: white;
+    grid-template-columns: 81%;
+    grid-template-rows: 3vw 27vw auto auto 25px;
+    grid-template-areas: "a1 a1"
+                         "a2 a2"
+                         "a3 a3"
+                         "a4 a4"
+                         "a5 a5";
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h4divemisionx{
+
+    @extend .centratebienmovil;
+    grid-area: a1;
+
+}
+
+.h4emision{
+
+    @extend .centratebienmovil;
+    font-size: 3vw;
+
+}
+
+.imgdivemision{
+
+    @extend .centratebienmovil;
+    grid-area: a2;
+    height: 27vw;
+
+    & img{
+        height: 26vw;
+    }
+
+}
+
+.sinopsisdivemision{
+
+    @extend .centratebienmovil;
+    @extend .centratebientextomovil;
+    height: auto;
+    max-width: 100%;
+    grid-row: a3;
+
+}
+
+.iframedivemision{
+
+    @extend .centratebienmovil;
+    grid-column: a5;
+    width: auto;
+
+    & iframe{
+        height: 35vw;
+        width: 80vw;    
+    }
+
+}
+/* En emision */
+
+/* Q y A */    
+.h2qya{
+    
+    @include titulosmixin(20px , 80vw , rgb(1, 1, 158));
+    
+}
+
+.textoyimagendivqya{
+
+    @extend .centratebienmovil;
+
+    & img{
+        max-height: 30vw;
+        max-width: 32vw;
+    }
+    & p{
+        @extend .centratebienmovil;
+        @extend .centratebientextomovil;
+        flex-direction: column;
+        height: auto;
+        width: 33vw;
+        font-size: 2.5vw;
+    }
+
+}
+
+.sugeescribirqya{
+
+    @extend .centratebienmovil;
+    flex-direction: column;
+
+    & textarea{
+        width: 63vw;
+        height: 26vw;    
+    }
+
+}
+
+.sugeinputqya{
+
+    font-size: 23px;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 3px;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent;
+
+    &:hover{
+        color: rgb(255, 255, 255);
+        background: #1f1f1f;
+        animation-name: botones;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background: #1f1f1f;
+    }
+
+}
+/* Q Y A */
+
+/* Registratre */
+
+.mainregistrate{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vw;    
+
+}
+
+.formulario{
+
+    @extend .centratebienmovil;
+    height: 100%;
+    width: 100%;
+
+}
+
+.formulariodiv{
+
+    @extend .centratebienmovil;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: 59vw;
+    padding: 4vw 3vw 2vw 3vw;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.formulariodiv h3{
+
+    color: white;
+    margin-left: 0px;
+    font-size: 4vw;
+
+}
+
+.control{
+
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    height: 2vw;
+    padding: 2vw;
+    margin-bottom: 3vw;
+    width: 100%;
+
+}
+
+form{
+
+    @extend .centratebienmovil;
+    flex-direction: column;
+    height: auto;
+    margin: 2vw 3vw 2vw 3vw;
+    max-width: 100vw;
+
+    & p{
+        @extend .centratebienmovil;
+        @extend .centratebientextomovil;
+        flex-direction: column;
+        color: white;
+        font-size: 2.5vw;
+        margin: 3vw;    }
+    & a{
+        color: white;
+        font-size: 2.5vw;
+
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    
+    }
+
+}
+
+.control{
+
+    @extend .centratebienmovil;
+    align-items: flex-start;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+
+}
+
+.boton{
+
+    @extend .centratebienmovil;
+    align-items: flex-start;
+    padding: 1.3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 3vw;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent;
+
+    &:hover{
+        color: rgb(255, 255, 255);
+        animation-name: botones;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        background: #1f1f1f;
+    }
+
+}
+/* Registratre */
+/* MAIN */
+
+/* Footer */
+footer{
+
+    @extend .centratebienmovil;
+    flex-direction: column;
+    height: 37vw;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    font-size: 4vw;
+    font-family: Formularrio de registro;
+
+    & .divley{
+        @extend .centratebienmovil;
+        @extend .centratebientextomovil;
+        height: auto;
+        width: 100%;
+    }
+    & .divcorreo{
+        @extend .centratebienmovil;
+        @extend .centratebientextomovil;
+        height: 100%;
+        width: 100%;
+    }    
+    & a{
+
+        color: white;
+        text-decoration: none;
+        font-family: Formularrio de registro;
+        font-size: 4vw;
+
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    
+    }
+
+}
+/* Footer */
+
+}
+
+/* Sin ajustar */
+@media only screen and ( min-width: 600px){}
+
+/* Ordenador */
+@media only screen and ( min-width: 992px){
+
+/* Extend */
+.titulos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+    background-color: rgb(146, 20, 16);
+    font-size: 3vw;
+
+}
+
+.centratebien{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centratebientexto{
+
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;  
+
+}
+/* Extend */
+
 /* HEADER */
 header{
 
     display: grid;
     height: auto;
-    padding-bottom: 8px;
+    padding-bottom: 1px;
     width: 100%;
     background-color: $backgroundheader;
     grid-template-columns: 50% 50%;
@@ -94,18 +1212,20 @@ nav{
 
    font-size: $botones;
    text-decoration: none;
-   padding: 0.5vw;
+   padding: 0.3vw;
    color: $colordos;
    border: 5px solid transparent;
 
-}
+   
+   &:hover{
 
-.ilmenu:hover{
-
-   animation-name: botones;
-   animation-duration: 4s;
-   animation-iteration-count: infinite;
-   background: $botonesHeader;
+    color: $coloruno;
+    animation-name: botones;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background: $botonesHeader;
+ 
+  }
 
 }
 
@@ -124,32 +1244,83 @@ nav{
    align-items: center;
    grid-area: logo;
 
-}
+   
+   &:hover{
+    animation: pulse;
+    animation-duration: 2s; 
+   }
 
-.divlogo:hover{
+   
+   & h1 a{
+    font-family: AnimeJAV;
+    color: $coloruno;
+    font-size: $tituloheader;
+   }
 
-   animation: pulse;
-   animation-duration: 2s; 
-
-}
-
-.divlogo h1 a{
-
-   font-family: AnimeJAV;
-   color: $coloruno;
-   font-size: $tituloheader;
-
-}
-
-.divlogo img{
-
-   height: 9vw;
-   margin-left: 19px;
-
+   
+   & img{
+    height: 8vw;
+    margin-left: 19px;
+   }
+   
 }
 /* HEADER */
-
 /* MAIN */
+
+/* Index */
+.indexsection{
+
+    @extend .centratebien;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey;
+
+}
+
+.h3mainindex h3{
+
+    @extend .titulos;
+
+}
+
+.slide{
+
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 45px;
+
+    & img{
+        height: 85vh;
+    }
+
+}
+
+h5{
+        
+    color: black;
+
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        font-size: 2rem;
+    }
+
+}
+
+.generosindex{
+
+    color: black;
+
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        font-size: 1.5rem;    
+    }
+
+}
+/* Index */
+
+/* Directorio Anime */
 .selectionmaindirec{
 
     background-color: $colordos;
@@ -159,64 +1330,348 @@ nav{
 
 .h3divdirec{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .centratebien;
+    
+    & .h3direc{
 
-}
-
-.h3direc{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: $tituloprincipal;
-    width: 95vw;
-    margin: 20px;
-    color: $coloruno;
-    background-color: $fondotituloprincipal;
+        @extend .titulos;
+        width: 95vw;
+        margin: 20px;
+        color: $coloruno;
+        background-color: $tirulodirectorio;
+    }
 
 }
 
 .ulselectionmaindirec{
 
+    padding: 0%;
     display: grid;
     height: auto;
     grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
     grid-template-rows: 23vw 23vw 23vw 23vw;
     justify-content: center;
     justify-content: space-evenly;
+    
+    & .liselectionmaindirec{
+        padding: $padinganimes;
+        height: 19vw;
+        background-color: $coloruno;
+
+        
+        
+        & figure:hover{  
+            animation: pulse;
+            animation-duration: 2s;
+        }
+
+        & img{
+
+            width: 100%;
+            height: 15vw;
+        
+        }
+
+        & figcaption{
+            font-size: $titulosdeanimes;
+            @extend .centratebientexto;
+        }
+
+    }
+
+}
+/* Directorio Anime */
+
+/* En emision */
+.selectionemision{
+
+    padding-bottom: 3vw;
 
 }
 
-.liselectionmaindirec{
+.h3divemision{
 
-    padding: $padinganimes;
-    height: 19vw;
-    background-color: $coloruno;
+    @extend .centratebien;
 
 }
 
-.liselectionmaindirec figure:hover{
+.h3emision{
 
-    animation: pulse;
-    animation-duration: 2s;
+    @extend .titulos;
+    width: 80vw;
+    margin: 20px;
+    background-color: $tiruloenmision;
 
 }
 
-.liselectionmaindirec img{
+.divemision{
 
+    display: grid;
+    max-width: 100%;
+    background-color: white;
+    grid-template-columns: 22% 59%;
+    grid-template-rows: 3vw 23vw 35vw 25px;
+    grid-template-areas: "a1 a2"
+                         "a3 a4"
+                         "a5 a6"
+                         "a7 a8";
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h4divemisionx{
+
+    @extend .centratebien;
+
+}
+
+.h4emision{
+
+    @extend .centratebien;
+    font-size: 2vw;
+    grid-column: a2;
+
+}
+
+.imgdivemision{
+
+    grid-row: a1 / a3;
+    height: 26vw;
     width: 100%;
-    height: 15vw;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
-.liselectionmaindirec figcaption{
+.sinopsisdivemision{
 
-    font-size: $titulosdeanimes;
-    text-align: center;
-    -ms-transform-origin-x: 50%;
-    -ms-transform-origin-y: 50%;
+    @extend .centratebien;
+    @extend .centratebientexto;
+    align-items: flex-start;
+    height: 23vw;
+    max-width: 100%;
+    grid-area: a4;
 
 }
+
+.iframedivemision{
+
+    @extend .centratebien;
+    grid-column: a5 / a6;
+    width: auto;
+
+    & iframe{
+        height: 35vw;
+        width: 80vw;    
+    }
+
+}
+/* En emision */
+
+/* Q y A */    
+.h2qya{
+    
+    @extend .titulos;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(1, 1, 158);
+    
+}
+
+.textoyimagendivqya{
+
+    @extend .centratebien;
+
+    & img{
+        max-height: 30vw;
+        max-width: 32vw;
+    }
+    & p{
+        @extend .centratebien;
+        @extend .centratebientexto;
+        flex-direction: column;
+        height: auto;
+        width: 33vw;
+        font-size: 2.5vw;
+    }
+
+}
+
+.sugeescribirqya{
+
+    @extend .centratebien;
+    flex-direction: column;
+
+    & textarea{
+        width: 63vw;
+        height: 26vw;    
+    }
+
+}
+
+.sugeinputqya{
+
+    font-size: 23px;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 3px;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent;
+
+    &:hover{
+        color: rgb(255, 255, 255);
+        background: #1f1f1f;
+        animation-name: botones;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background: #1f1f1f;
+    }
+
+}
+/* Q Y A */
+
+/* Registratre */
+.formulario{
+
+    @extend .centratebien;
+    height: 50vw;
+    width: 100%;
+
+}
+
+.formulariodiv{
+
+    @extend .centratebien;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: 28vw;
+    padding-top: 20px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.formulariodiv h3{
+
+    color: white;
+    margin-left: 20px;
+    font-size: 22px;
+
+}
+
+form{
+
+    @extend .centratebien;
+    flex-direction: column;
+    height: auto;
+    margin: 2vw 3vw 2vw 3vw;
+    max-width: 100vw;
+
+    & p{
+        @extend .centratebien;
+        @extend .centratebientexto;
+        flex-direction: column;
+        color: white;
+    }
+    & a{
+        color: white;
+
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    
+    }
+
+}
+
+.control{
+
+    @extend .centratebien;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 2vw;
+    width: 100%;
+
+}
+
+.boton{
+
+    @extend .centratebien;
+    align-items: flex-start;
+    padding: 1.3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 1.8vw;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent;
+
+    &:hover{
+        color: rgb(255, 255, 255);
+        animation-name: botones;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        background: #1f1f1f;
+    }
+
+}
+/* Registratre */
 /* MAIN */
+
+/* Footer */
+footer{
+
+    @extend .centratebien;
+    flex-direction: column;
+    height: 10vw;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    font-size: 20px;
+    font-family: Formularrio de registro;
+    padding-top: 5vw;
+    padding-bottom: 4vw;
+
+    & .divley{
+        @extend .centratebien;
+        @extend .centratebientexto;
+        height: auto;
+        width: 100%;
+    }
+    & .divcorreo{
+        @extend .centratebien;
+        @extend .centratebientexto;
+        height: 100%;
+        width: 100%;
+    }    
+    & a{
+
+        color: white;
+        text-decoration: none;
+        font-family: Formularrio de registro;
+
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    
+    }
+
+}
+/* Footer */
+}
+
+
