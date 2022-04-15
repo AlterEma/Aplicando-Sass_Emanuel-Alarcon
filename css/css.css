@@ -15,399 +15,45 @@
   font-family: AnimeJAV;
   src: url("Tipografia/PermanentMarker-Regular.ttf"); }
 
-@keyframes botones {
-  1% {
-    border-top: 5px solid #3a3a3a; }
-  2% {
-    border-top: 5px solid #c7c7c7; }
-  24% {
-    border-right: 5px solid #1f1f1f; }
-  25% {
-    border-right: 5px solid #c7c7c7; }
-  48% {
-    border-bottom: 5px solid #1f1f1f; }
-  49% {
-    border-bottom: 5px solid #1f1f1f; }
-  50% {
-    border-bottom: 5px solid #c7c7c7; }
-  75% {
-    border-left: 5px solid #1f1f1f; }
-  99% {
-    border-left: 5px solid #c7c7c7; }
-  100% {
-    border-left: 5px solid #1f1f1f; } }
+/*
+@keyframes botones{
 
-/* Mini juego */
-/* Mixin */
-/* Mixin */
-@keyframes violeta {
-  0% {
-    width: 0;
-    height: 0;
-    border-top: 150px solid blueviolet;
-    border-right: 62px solid transparent;
-    border-left: 62px solid transparent;
-    transform: rotate(-45deg);
-    position: relative;
-    top: 46px;
-    left: 46px;
-    z-index: 2;
-    grid-area: a1; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-top: 150px;
-    border-top: 150px solid blueviolet;
-    border-right: 62px solid transparent;
-    border-left: 62px solid transparent;
-    transform: rotate(-45deg);
-    position: relative;
-    top: -7px;
-    left: -7px;
-    z-index: 3;
-    grid-area: a1; } }
+    1%{
+        border-top: 5px solid #3a3a3a;
+    }
+    2%{
+        border-top: 5px solid #c7c7c7;
+    }
 
-@keyframes rojo {
-  0% {
-    width: 0;
-    height: 0;
-    border-top: 150px solid red;
-    border-right: 62px solid transparent;
-    border-left: 62px solid transparent;
-    position: relative;
-    transform: rotate(0deg);
-    top: 25px;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-top: 150px;
-    border-top: 150px solid red;
-    border-right: 62px solid transparent;
-    border-left: 62px solid transparent;
-    position: relative;
-    transform: rotate(0deg);
-    bottom: 300px;
-    top: -50px;
-    z-index: 3; } }
+    24%{
+        border-right: 5px solid #1f1f1f;
+    }
+    25%{
+        border-right: 5px solid #c7c7c7;
+    }
 
-@keyframes naranja {
-  0% {
-    width: 0;
-    height: 0;
-    border-top: 62px solid transparent;
-    border-right: 150px solid orange;
-    border-bottom: 62px solid transparent;
-    transform: rotate(-45deg);
-    position: relative;
-    top: 46px;
-    right: 46px;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-right: 150px;
-    border-top: 62px solid transparent;
-    border-right: 150px solid orange;
-    border-bottom: 62px solid transparent;
-    transform: rotate(-45deg);
-    position: relative;
-    top: -7px;
-    right: -7px;
-    z-index: 3; } }
+    48%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    49%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    50%{
+        border-bottom: 5px solid #c7c7c7;
+    }
 
-@keyframes amarillo {
-  0% {
-    width: 0;
-    height: 0;
-    border-top: 62px solid transparent;
-    border-bottom: 62px solid transparent;
-    border-right: 150px solid yellow;
-    transform: rotate(0deg);
-    position: relative;
-    right: 25px;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-left: 150px;
-    border-top: 62px solid transparent;
-    border-bottom: 62px solid transparent;
-    border-right: 150px solid yellow;
-    transform: rotate(0deg);
-    position: relative;
-    right: -49px;
-    z-index: 3; } }
+    75%{
+        border-left: 5px solid #1f1f1f;
+    }
+    99%{
+        border-left: 5px solid #c7c7c7;
+    }
+    100%{
+        border-left: 5px solid #1f1f1f;
+    }
 
-@keyframes verde {
-  0% {
-    width: 0;
-    height: 0;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid green;
-    border-left: 62px solid transparent;
-    transform: rotate(-45deg);
-    bottom: 46px;
-    right: 46px;
-    position: relative;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-bottom: 150px;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid green;
-    border-left: 62px solid transparent;
-    transform: rotate(-45deg);
-    bottom: -5px;
-    right: -5px;
-    position: relative;
-    z-index: 3; } }
-
-@keyframes celeste {
-  0% {
-    width: 0;
-    height: 0;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid skyblue;
-    border-left: 62px solid transparent;
-    position: relative;
-    bottom: 25px;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-bottom: 150px;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid skyblue;
-    border-left: 62px solid transparent;
-    position: relative;
-    bottom: -50px;
-    z-index: 3; } }
-
-@keyframes negro {
-  0% {
-    width: 0;
-    height: 0;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid black;
-    border-left: 62px solid transparent;
-    transform: rotate(45deg);
-    position: relative;
-    left: 46px;
-    bottom: 46px;
-    z-index: 2; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-bottom: 150px;
-    border-right: 62px solid transparent;
-    border-bottom: 150px solid black;
-    border-left: 62px solid transparent;
-    transform: rotate(45deg);
-    position: relative;
-    left: -5px;
-    bottom: -5px;
-    z-index: 3; } }
-
-@keyframes azul {
-  0% {
-    width: 0;
-    height: 0;
-    border-top: 62px solid transparent;
-    border-bottom: 62px solid transparent;
-    border-left: 150px solid blue;
-    position: relative;
-    left: 25px; }
-  100% {
-    width: 0;
-    height: 0;
-    padding-left: 150px;
-    border-top: 62px solid transparent;
-    border-bottom: 62px solid transparent;
-    border-left: 150px solid blue;
-    position: relative;
-    left: -49px;
-    z-index: 3; } }
-
-@keyframes animacion {
-  0% {
-    position: absolute;
-    left: -105px;
-    top: 500px;
-    z-index: 1;
-    height: auto;
-    width: auto;
-    background-color: aqua; } }
-
-.contenedoranimacion {
-  position: absolute;
-  left: -170px;
-  top: 450px;
-  z-index: 10; }
-
-.contenedoranimacion:hover {
-  position: absolute;
-  top: 400px;
-  height: auto;
-  width: auto;
-  z-index: 10; }
-
-.minijuego {
-  position: fixed;
-  height: 300px;
-  width: 500px;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-areas: "a1 a2 a3" "b1 b2 b3" "c1 c2 c3";
-  align-items: center;
-  justify-items: center;
-  transform: scale(0.3); }
-
-.minijuego:hover {
-  transform: scale(1.5);
-  padding-left: 35vw;
-  padding-bottom: 400px;
-  top: 290px; }
-
-.imagenanimacion {
-  position: absolute;
-  grid-area: b2;
-  z-index: 0; }
-
-.unoanimacion {
-  width: 0;
-  height: 0;
-  border-top: 150px solid blueviolet;
-  border-right: 62px solid transparent;
-  border-left: 62px solid transparent;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 46px;
-  left: 46px; }
-
-.unoanimacion:hover {
-  animation-name: violeta;
-  animation-fill-mode: forwards;
-  animation-duration: 4s; }
-
-.dosanimacion {
-  width: 0;
-  height: 0;
-  border-top: 150px solid red;
-  border-right: 62px solid transparent;
-  border-left: 62px solid transparent;
-  position: relative;
-  top: 25px; }
-
-.dosanimacion:hover {
-  animation-name: rojo;
-  animation-fill-mode: forwards;
-  animation-duration: 4s; }
-
-.tresanimacion {
-  width: 0;
-  height: 0;
-  border-top: 62px solid transparent;
-  border-right: 150px solid orange;
-  border-bottom: 62px solid transparent;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 46px;
-  right: 46px; }
-
-.tresanimacion:hover {
-  animation-name: naranja;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; }
-
-.cuatroanimacion {
-  width: 0;
-  height: 0;
-  border-top: 62px solid transparent;
-  border-bottom: 62px solid transparent;
-  border-left: 150px solid blue;
-  position: relative;
-  left: 25px; }
-
-.cuatroanimacion:hover {
-  animation-name: azul;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; }
-
-.cincoanimacion {
-  width: 0;
-  height: 0;
-  border-top: 150px solid red;
-  border-right: 62px solid transparent;
-  border-left: 62px solid transparent;
-  transform: rotate(-45deg);
-  position: relative;
-  border-top: 46px;
-  right: 46px; }
-
-.seisanimacion {
-  width: 0;
-  height: 0;
-  border-top: 62px solid transparent;
-  border-bottom: 62px solid transparent;
-  border-right: 150px solid yellow;
-  position: relative;
-  right: 25px; }
-
-.seisanimacion:hover {
-  animation-name: amarillo;
-  animation-fill-mode: forwards;
-  animation-duration: 4s; }
-
-.sieteanimacion {
-  width: 0;
-  height: 0;
-  border-right: 62px solid transparent;
-  border-bottom: 150px solid black;
-  border-left: 62px solid transparent;
-  transform: rotate(45deg);
-  position: relative;
-  left: 46px;
-  bottom: 46px; }
-
-.sieteanimacion:hover {
-  animation-name: negro;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; }
-
-.ochoanimacion {
-  width: 0;
-  height: 0;
-  border-right: 62px solid transparent;
-  border-bottom: 150px solid skyblue;
-  border-left: 62px solid transparent;
-  position: relative;
-  bottom: 25px; }
-
-.ochoanimacion:hover {
-  animation-name: celeste;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; }
-
-.nueveanimacion {
-  width: 0;
-  height: 0;
-  border-right: 62px solid transparent;
-  border-bottom: 150px solid green;
-  border-left: 62px solid transparent;
-  transform: rotate(-45deg);
-  bottom: 46px;
-  right: 46px;
-  position: relative; }
-
-.nueveanimacion:hover {
-  animation-name: verde;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; }
-
-/* Mini juego */
+}
+*/
 /* Universal */
 a {
   text-decoration: none; }
@@ -419,64 +65,46 @@ ul, li {
 /* Movil */
 @media only screen and (max-width: 600px) {
   /* Extend */
-  .centratebienmovil, .indexsection, .h3divdirec, .h3divemision, .h4divemisionx, .h4emision, .imgdivemision, .sinopsisdivemision, .iframedivemision, .textoyimagendivqya, .textoyimagendivqya p, .sugeescribirqya, .formulario, .formulariodiv, form, form p, .control, .boton, footer, footer .divley, footer .divcorreo {
+  .titulosmovil, .h3mainindex h3, .h3divdirec .h3direc, .h3divemision h3, .h2qya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+    background-color: #37474f;
+    font-size: 5vw; }
+  .centratebienmovil, .indexsection, .h3divdirec, .ulselectionmaindirec .liselectionmaindirec img, .emisionsection, .textoyimagendivqya, .textoyimagendivqya p, .sugeescribirqya, .formulario, .formulariodiv, form, form p, .control, .boton, footer, footer .divley, footer .divcorreo {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .centratebientextomovil, .ulselectionmaindirec .liselectionmaindirec figcaption, .sinopsisdivemision, .textoyimagendivqya p, form p, footer .divley, footer .divcorreo {
+  .centratebientextomovil, .ulselectionmaindirec .liselectionmaindirec figcaption, .textoyimagendivqya p, form p, footer .divley, footer .divcorreo {
     text-align: center;
     -ms-transform-origin-x: 50%;
     -ms-transform-origin-y: 50%; }
   /* Extend */
-  /* Mixin */
-  /* Mixin */
   /* Header */
-  header {
-    height: auto;
-    background-color: black; }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: a4;
-    height: auto; }
-  .ulnav {
-    display: grid;
-    padding: 0px;
-    grid-template-columns: 100%;
-    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
-    justify-items: center;
-    align-items: center; }
-  .ilmenu {
-    font-size: 6vw;
-    margin: 10vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    color: #c7c7c7;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    text-decoration: none; }
-  .ilmenu:hover {
-    color: white;
-    border-left: 5px solid #c7c7c7;
-    border-right: 5px solid #c7c7c7;
-    background: #1f1f1f; }
-  .limenuinput input {
-    height: 5vw;
-    width: 45vw;
-    border-radius: 20px; }
+  .ordenadorytable {
+    display: none; }
   .divlogo {
-    grid-area: a1;
-    display: flex;
-    justify-content: center; }
-  .divlogo h1 a {
+    display: none; }
+  header {
+    height: 19.8vw;
+    background-color: #000; }
+  #navmovil {
+    padding: 0px; }
+  #headerfondo {
+    background-color: #000; }
+  .navbar-brand {
     font-family: AnimeJAV;
-    color: white;
-    font-size: 13vw; }
-  .divlogo img {
-    margin-left: 10px;
-    height: 20vw;
-    width: 20vw; }
+    font-size: 10vw;
+    color: white; }
+  #Titulo {
+    color: white; }
+  .navbar-toggler {
+    background-color: grey; }
   /* Header */
   /* main */
   /* Index */
@@ -485,18 +113,6 @@ ul, li {
     width: 100%;
     padding-top: 20px;
     background-color: lightgrey; }
-  .h3mainindex h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    width: 100%;
-    color: white;
-    text-align: center;
-    -ms-transform-origin-x: 50%;
-    -ms-transform-origin-y: 50%;
-    background-color: #921410;
-    font-size: 5vw; }
   .slide {
     padding: 1vh 1vw 1vh 1vw;
     background-color: white;
@@ -509,9 +125,10 @@ ul, li {
     h5:hover {
       background-color: white;
       font-size: 2rem; }
-  .generosindex {
-    color: black; }
-    .generosindex:hover {
+  .generosbootstrap {
+    color: black;
+    font-size: 3vw; }
+    .generosbootstrap:hover {
       background-color: white;
       font-size: 1.5rem; }
   /* Index */
@@ -520,94 +137,73 @@ ul, li {
     background-color: #c7c7c7;
     padding-bottom: 3vw; }
   .h3divdirec .h3direc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 10px 0px;
-    width: 95vw;
+    font-size: 5.5vw;
+    width: 86.2vw;
+    margin: 20px;
     color: white;
-    text-align: center;
-    -ms-transform-origin-x: 50%;
-    -ms-transform-origin-y: 50%;
-    background-color: #310031;
-    font-size: 5vw; }
+    background-color: #37474f; }
   .ulselectionmaindirec {
     padding: 0%;
     display: grid;
     height: auto;
-    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
-    grid-template-rows: 23vw 23vw 23vw 23vw;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 65vw 65vw 65vw 65vw 65vw 65vw 65vw;
     justify-content: center;
     justify-content: space-evenly; }
     .ulselectionmaindirec .liselectionmaindirec {
       padding: 0.2vw 0.2vw 0px 0.2vw;
-      height: 19vw;
+      height: 62vw;
       background-color: white; }
       .ulselectionmaindirec .liselectionmaindirec figure:hover {
         animation: pulse;
         animation-duration: 2s; }
       .ulselectionmaindirec .liselectionmaindirec img {
-        width: 100%;
-        height: 15vw; }
+        width: 99%;
+        height: 55vw; }
       .ulselectionmaindirec .liselectionmaindirec figcaption {
-        font-size: 1.3vw; }
+        font-size: 4vw; }
   /* Directorio Anime */
   /* En emision */
-  .selectionemision {
-    padding-bottom: 3vw; }
-  .h3emision {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    width: 80vw;
-    color: white;
-    text-align: center;
-    -ms-transform-origin-x: 50%;
-    -ms-transform-origin-y: 50%;
-    background-color: #015001;
-    font-size: 5vw; }
-  .divemision {
-    display: grid;
+  .emisionsection {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey; }
+  .h3divemision h3 {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #37474f;
+    background-color: #37474f; }
+  .card-img {
+    height: 40vw; }
+  .sinopsisdiv {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .card-title {
+    color: #000;
     background-color: white;
-    grid-template-columns: 81%;
-    grid-template-rows: 3vw 27vw auto auto 25px;
-    grid-template-areas: "a1 a1" "a2 a2" "a3 a3" "a4 a4" "a5 a5";
-    justify-content: center;
-    align-items: center; }
-  .h4divemisionx {
-    grid-area: a1; }
-  .h4emision {
-    font-size: 3vw; }
-  .imgdivemision {
-    grid-area: a2;
-    height: 27vw; }
-    .imgdivemision img {
-      height: 26vw; }
-  .sinopsisdivemision {
-    height: auto;
-    max-width: 100%;
-    grid-row: a3; }
+    max-width: fit-content;
+    font-size: 2vw; }
+    .card-title:hover {
+      font-size: 3vw; }
+  .card-text {
+    color: #000;
+    background-color: white;
+    max-width: fit-content; }
+    .card-text:hover {
+      font-size: 2rem; }
   .iframedivemision {
-    grid-column: a5;
-    width: auto; }
-    .iframedivemision iframe {
-      height: 35vw;
-      width: 80vw; }
+    margin-bottom: 45px; }
+    .iframedivemision .iframeemision {
+      height: 40vw;
+      width: 100%; }
   /* En emision */
   /* Q y A */
   .h2qya {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: white;
-    text-align: center;
-    -ms-transform-origin-x: 50%;
-    -ms-transform-origin-y: 50%;
-    background-color: #01019e;
-    font-size: 5vw; }
+    background-color: #01019e; }
   .textoyimagendivqya img {
     max-height: 30vw;
     max-width: 32vw; }
@@ -643,7 +239,7 @@ ul, li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vw; }
+    height: 120vw; }
   .formulario {
     height: 100%;
     width: 100%; }
@@ -702,9 +298,6 @@ ul, li {
     border: 5px solid transparent; }
     .boton:hover {
       color: white;
-      animation-name: botones;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
       background: #1f1f1f; }
   /* Registratre */
   /* MAIN */
@@ -733,11 +326,10 @@ ul, li {
         text-decoration: underline; }
   /* Footer */ }
 
-/* Sin ajustar */
-/* Ordenador */
-@media only screen and (min-width: 992px) {
+/* Table */
+@media only screen and (min-width: 600px) {
   /* Extend */
-  .titulos, .h3mainindex h3, .h3divdirec .h3direc, .h3emision, .h2qya {
+  .titulostable, .h3mainindex h3, .h3divdirec .h3direc, .h3divemision h3, .h2qya {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -746,13 +338,298 @@ ul, li {
     text-align: center;
     -ms-transform-origin-x: 50%;
     -ms-transform-origin-y: 50%;
-    background-color: #921410;
+    background-color: #37474f;
     font-size: 3vw; }
-  .centratebien, .indexsection, .h3divdirec, .h3divemision, .h4divemisionx, .h4emision, .sinopsisdivemision, .iframedivemision, .textoyimagendivqya, .textoyimagendivqya p, .sugeescribirqya, .formulario, .formulariodiv, form, form p, .control, .boton, footer, footer .divley, footer .divcorreo {
+  .centratebientable, .indexsection, .h3divdirec, .emisionsection, .textoyimagendivqya, .textoyimagendivqya p, .sugeescribirqya, .formulario, .formulariodiv, form, form p, .control, .boton, footer, footer .divley, footer .divcorreo {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .centratebientexto, .ulselectionmaindirec .liselectionmaindirec figcaption, .sinopsisdivemision, .textoyimagendivqya p, form p, footer .divley, footer .divcorreo {
+  .centratebientextotable, .ulselectionmaindirec .liselectionmaindirec figcaption, .textoyimagendivqya p, form p, footer .divley, footer .divcorreo {
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%; }
+  /* Extend */
+  /* HEADER */
+  .movil {
+    display: none; }
+  header {
+    display: grid;
+    height: auto;
+    padding-bottom: 1px;
+    width: 100%;
+    background-color: black;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 5vw;
+    grid-template-areas: "logo logo" "nav nav"; }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: nav; }
+  .ilmenu {
+    font-size: 1.7vw;
+    text-decoration: none;
+    padding: 0.3vw;
+    color: #c7c7c7;
+    border: 2px solid transparent; }
+    .ilmenu:hover {
+      border-color: #c7c7c7;
+      color: white; }
+  .limenuinput input {
+    border-radius: 20px;
+    height: 2rem;
+    width: 15vw; }
+  .divlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo; }
+    .divlogo:hover {
+      animation: pulse;
+      animation-duration: 2s; }
+    .divlogo h1 a {
+      font-family: AnimeJAV;
+      color: white;
+      font-size: 6vw; }
+    .divlogo img {
+      height: 8vw;
+      margin-left: 19px; }
+  /* HEADER */
+  /* MAIN */
+  /* Index */
+  .indexsection {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey; }
+  .slide {
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 45px; }
+    .slide img {
+      height: 45vw; }
+  h5 {
+    color: black; }
+    h5:hover {
+      background-color: white;
+      font-size: 2rem; }
+  .generosbootstrap {
+    color: black; }
+    .generosbootstrap:hover {
+      background-color: white;
+      font-size: 1.5rem; }
+  /* Index */
+  /* Directorio Anime */
+  .selectionmaindirec {
+    background-color: #c7c7c7;
+    padding-bottom: 3vw; }
+  .h3divdirec .h3direc {
+    width: 95vw;
+    margin: 20px;
+    color: white; }
+  .ulselectionmaindirec {
+    padding: 0%;
+    display: grid;
+    height: auto;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
+    grid-template-rows: 23vw 23vw 23vw 23vw;
+    justify-content: center;
+    justify-content: space-evenly; }
+    .ulselectionmaindirec .liselectionmaindirec {
+      padding: 0.2vw 0.2vw 0px 0.2vw;
+      height: 19vw;
+      background-color: white; }
+      .ulselectionmaindirec .liselectionmaindirec figure:hover {
+        animation: pulse;
+        animation-duration: 2s; }
+      .ulselectionmaindirec .liselectionmaindirec img {
+        width: 100%;
+        height: 15vw; }
+      .ulselectionmaindirec .liselectionmaindirec figcaption {
+        font-size: 1.3vw; }
+  /* Directorio Anime */
+  /* En emision */
+  .emisionsection {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey; }
+  .h3divemision h3 {
+    width: 100%;
+    margin-bottom: 20px; }
+  .card-img {
+    height: 40vw; }
+  .sinopsisdiv {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .card-title {
+    color: #000;
+    background-color: white;
+    max-width: fit-content;
+    font-size: 2vw; }
+    .card-title:hover {
+      font-size: 3vw; }
+  .card-text {
+    color: #000;
+    background-color: white;
+    max-width: fit-content; }
+    .card-text:hover {
+      font-size: 2rem; }
+  .iframedivemision {
+    margin-bottom: 45px; }
+    .iframedivemision .iframeemision {
+      height: 40vw;
+      width: 100%; }
+  /* En emision */
+  /* Q y A */
+  .h2qya {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white; }
+  .textoyimagendivqya img {
+    max-height: 30vw;
+    max-width: 32vw; }
+  .textoyimagendivqya p {
+    flex-direction: column;
+    height: auto;
+    width: 33vw;
+    font-size: 2.5vw; }
+  .sugeescribirqya {
+    flex-direction: column; }
+    .sugeescribirqya textarea {
+      width: 63vw;
+      height: 26vw; }
+  .sugeinputqya {
+    font-size: 23px;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 3px;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent; }
+    .sugeinputqya:hover {
+      color: white;
+      background: #1f1f1f;
+      animation-name: botones;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      background: #1f1f1f; }
+  /* Q Y A */
+  /* Registratre */
+  .mainregistrate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vw; }
+  .formulario {
+    height: 100%;
+    width: 100%; }
+  .formulariodiv {
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: 40vw;
+    padding: 3vw 2vw 1vw 2vw;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000; }
+  .formulariodiv h3 {
+    color: white;
+    margin-left: 0px;
+    font-size: 3vw;
+    margin-bottom: 0.5; }
+  .control {
+    display: flex;
+    justify-content: center;
+    font-size: 2.0vw;
+    height: 0.5vw;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+    width: 100%; }
+  form {
+    flex-direction: column;
+    height: auto;
+    margin: 1vw 2vw 1vw 2vw;
+    max-width: 100vw; }
+    form p {
+      flex-direction: column;
+      color: white;
+      font-size: 2.0vw;
+      margin: 1vw; }
+    form a {
+      color: white;
+      font-size: 1.5vw; }
+      form a:hover {
+        color: white;
+        text-decoration: underline; }
+  .control {
+    align-items: flex-start;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    width: 100%; }
+  .boton {
+    align-items: flex-start;
+    padding: 1.3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    width: 70%;
+    font-size: 3vw;
+    color: black;
+    background-color: white;
+    color: white transparent;
+    border: 5px solid transparent; }
+    .boton:hover {
+      color: white;
+      background: #1f1f1f;
+      border-color: white; }
+  /* Registratre */
+  /* MAIN */
+  /* Footer */
+  footer {
+    flex-direction: column;
+    height: 10vw;
+    width: 100%;
+    background-color: #1b1a1a;
+    color: white;
+    font-size: 20px;
+    font-family: Formularrio de registro;
+    padding-top: 5vw;
+    padding-bottom: 4vw; }
+    footer .divley {
+      height: auto;
+      width: 100%; }
+    footer .divcorreo {
+      height: 100%;
+      width: 100%; }
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-family: Formularrio de registro; }
+      footer a:hover {
+        color: white;
+        text-decoration: underline; } }
+
+/* Ordenador */
+@media only screen and (min-width: 992px) {
+  /* Extend */
+  .titulos, .h3mainindex h3, .h3divdirec .h3direc, .h3divemision h3, .h2qya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    -ms-transform-origin-x: 50%;
+    -ms-transform-origin-y: 50%;
+    background-color: #37474f;
+    font-size: 3vw; }
+  .centratebien, .indexsection, .h3divdirec, .emisionsection, .textoyimagendivqya, .textoyimagendivqya p, .sugeescribirqya, .formulario, .formulariodiv, form, form p, .control, .boton, footer, footer .divley, footer .divcorreo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .centratebientexto, .ulselectionmaindirec .liselectionmaindirec figcaption, .textoyimagendivqya p, form p, footer .divley, footer .divcorreo {
     text-align: center;
     -ms-transform-origin-x: 50%;
     -ms-transform-origin-y: 50%; }
@@ -777,13 +654,10 @@ ul, li {
     text-decoration: none;
     padding: 0.3vw;
     color: #c7c7c7;
-    border: 5px solid transparent; }
+    border: 2.5px solid transparent; }
     .ilmenu:hover {
-      color: white;
-      animation-name: botones;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      background: #1f1f1f; }
+      border-color: #c7c7c7;
+      color: white; }
   .limenuinput input {
     border-radius: 20px;
     height: 2rem;
@@ -823,9 +697,9 @@ ul, li {
     h5:hover {
       background-color: white;
       font-size: 2rem; }
-  .generosindex {
+  .generosbootstrap {
     color: black; }
-    .generosindex:hover {
+    .generosbootstrap:hover {
       background-color: white;
       font-size: 1.5rem; }
   /* Index */
@@ -836,8 +710,7 @@ ul, li {
   .h3divdirec .h3direc {
     width: 95vw;
     margin: 20px;
-    color: white;
-    background-color: #310031; }
+    color: white; }
   .ulselectionmaindirec {
     padding: 0%;
     display: grid;
@@ -860,49 +733,44 @@ ul, li {
         font-size: 1.3vw; }
   /* Directorio Anime */
   /* En emision */
-  .selectionemision {
-    padding-bottom: 3vw; }
-  .h3emision {
-    width: 80vw;
-    margin: 20px;
-    background-color: #015001; }
-  .divemision {
-    display: grid;
-    max-width: 100%;
+  .emisionsection {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    background-color: lightgrey; }
+  .h3divemision h3 {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #37474f; }
+  .card-img {
+    height: 40vw; }
+  .sinopsisdiv {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .card-title {
+    color: #000;
     background-color: white;
-    grid-template-columns: 22% 59%;
-    grid-template-rows: 3vw 23vw 35vw 25px;
-    grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8";
-    justify-content: center;
-    align-items: center; }
-  .h4emision {
-    font-size: 2vw;
-    grid-column: a2; }
-  .imgdivemision {
-    grid-row: a1 / a3;
-    height: 26vw;
-    width: 100%; }
-    .imgdivemision img {
-      width: 100%;
-      height: 100%; }
-  .sinopsisdivemision {
-    align-items: flex-start;
-    height: 23vw;
-    max-width: 100%;
-    grid-area: a4; }
+    max-width: fit-content;
+    font-size: 2vw; }
+    .card-title:hover {
+      font-size: 3vw; }
+  .card-text {
+    color: #000;
+    background-color: white;
+    max-width: fit-content; }
+    .card-text:hover {
+      font-size: 2rem; }
   .iframedivemision {
-    grid-column: a5 / a6;
-    width: auto; }
-    .iframedivemision iframe {
-      height: 35vw;
-      width: 80vw; }
+    margin-bottom: 45px; }
+    .iframedivemision .iframeemision {
+      height: 40vw;
+      width: 100%; }
   /* En emision */
   /* Q y A */
   .h2qya {
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white;
-    background-color: #01019e; }
+    color: white; }
   .textoyimagendivqya img {
     max-height: 30vw;
     max-width: 32vw; }
@@ -934,57 +802,71 @@ ul, li {
       background: #1f1f1f; }
   /* Q Y A */
   /* Registratre */
+  .mainregistrate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw; }
   .formulario {
-    height: 50vw;
+    height: 100%;
     width: 100%; }
   .formulariodiv {
     align-items: flex-start;
     flex-direction: column;
     height: auto;
     width: 28vw;
-    padding-top: 20px;
+    padding: 2vw 1.5vw 1vw 1.5vw;
     background-color: black;
     border-radius: 4px;
     box-shadow: 7px 13px 37px #000; }
   .formulariodiv h3 {
     color: white;
-    margin-left: 20px;
-    font-size: 22px; }
+    margin-left: 0px;
+    font-size: 2vw; }
+  .control {
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    height: 1vw;
+    padding: 1vw;
+    margin-bottom: 3vw;
+    width: 100%; }
   form {
     flex-direction: column;
     height: auto;
-    margin: 2vw 3vw 2vw 3vw;
+    margin: 0.5vw 1vw 0.5vw 1vw;
     max-width: 100vw; }
     form p {
       flex-direction: column;
-      color: white; }
+      color: white;
+      font-size: 1vw;
+      margin: 1vw; }
     form a {
-      color: white; }
+      color: white;
+      font-size: 1vw; }
       form a:hover {
         color: white;
         text-decoration: underline; }
   .control {
     align-items: flex-start;
-    padding: 5px;
-    margin-bottom: 2vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
     width: 100%; }
   .boton {
     align-items: flex-start;
-    padding: 1.3vw;
+    padding: 1vw;
     margin-top: 1vw;
     margin-bottom: 2vw;
-    width: 70%;
-    font-size: 1.8vw;
+    width: 60%;
+    font-size: 1.6vw;
     color: black;
     background-color: white;
     color: white transparent;
-    border: 5px solid transparent; }
+    border: 3px solid transparent; }
     .boton:hover {
       color: white;
-      animation-name: botones;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      background: #1f1f1f; }
+      background: #1f1f1f;
+      border-color: white; }
   /* Registratre */
   /* MAIN */
   /* Footer */
