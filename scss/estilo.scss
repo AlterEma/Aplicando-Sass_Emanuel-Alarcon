@@ -708,10 +708,11 @@ nav{
 h5{
         
     color: black;
+    background-color: rgb(255, 255, 255);
 
     &:hover{
-        background-color: rgb(255, 255, 255);
-        font-size: 2rem;
+        
+        font-size: 3.8vw;
     }
 
 }
@@ -719,10 +720,11 @@ h5{
 .generosbootstrap{
 
     color: black;
+    background-color: rgb(255, 255, 255);
 
     &:hover{
-        background-color: rgb(255, 255, 255);
-        font-size: 1.5rem;    
+        
+        font-size: 3.4vw;    
     }
 
 }

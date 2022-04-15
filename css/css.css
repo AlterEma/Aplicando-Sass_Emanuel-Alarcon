@@ -410,15 +410,15 @@ ul, li {
     .slide img {
       height: 45vw; }
   h5 {
-    color: black; }
+    color: black;
+    background-color: white; }
     h5:hover {
-      background-color: white;
-      font-size: 2rem; }
+      font-size: 3.8vw; }
   .generosbootstrap {
-    color: black; }
+    color: black;
+    background-color: white; }
     .generosbootstrap:hover {
-      background-color: white;
-      font-size: 1.5rem; }
+      font-size: 3.4vw; }
   /* Index */
   /* Directorio Anime */
   .selectionmaindirec {
